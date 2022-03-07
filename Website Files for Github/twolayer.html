@@ -1,0 +1,131 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <title>Joshua Chen</title>
+  <style>
+    .section{
+      padding-top: 2vw;
+      padding-bottom: 2vw;
+    }
+    .tabs .indicator{
+      background-color: #1a237e;
+    }
+    .tabs .tab a:focus, .tabs .tab a:focus.active{
+      background: transparent;
+    }
+  </style>
+</head>
+<body>
+    <!-- Navbar -->
+  <header>
+    <nav class="nav-wrapper black">
+      <div class="container">
+        
+        <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+          <i class="material-icons">menu</i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#Research">Research</a></li>
+          <li><a href="index.html#Projects">Projects</a></li>
+        </ul>
+        <ul class="sidenav grey lighten-2" id="mobile-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#Research">Research</a></li>
+          <li><a href="index.html#Projects">Projects</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div class="section white">
+    <div class="row container">
+        <h2 style="font-family: georgia;" class="header center-align">Two Layer Neural Network</h2>
+    </div>
+  </div>
+
+  <div class="row">
+    <style>
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 70%;
+        }
+    </style>
+    <img src="img/softmax.jpg" class="center">
+  </div>
+
+  <div class="section white">
+    <div class="row container">
+        <h4>About the project:</h4>
+        <p class="grey-text text-darken-3 lighten-3">This project was adopted 
+          from the Stanford CS231n Convolutional Neural Networks for Visual 
+          Recognition course. The goal was to implement a two layer neural 
+          network on CIFAR-10, and it involved implementing forward and 
+          backward passes, testing different loss functions, and tuning 
+          hyperparameters. The two layer fully connected network is defined 
+          by a fully connected layer taking an input, followed by a ReLU 
+          activation, then followed by another fully connected layer and 
+          softmax layer.</p>
+        <p class="grey-text text-darken-3 lighten-3">The focus of this project 
+          was implementing each layer and subsequent operations from scratch. 
+          The code was then tested in a modular fashion by the calling code in 
+          Google Colab. Each block within the network yielded minimal error, 
+          thus proving the validity of my implementation.</p>
+        <br>
+        <h4>Skills:</h4>
+        <p>Software: Python | Google Colab</p>
+    </div>
+  </div>
+  
+    <!-- Footer -->
+  <footer class="page-footer black">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Contact</h5>
+          <p class="grey-text text-lighten-4">Email: jchen142@ucr.edu</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Social Media</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/jchen142/">
+              <i class="fab fa-linkedin"></i>
+            </a></li>
+            <li><a class="grey-text text-lighten-3" href="https://www.instagram.com/itzjoshhhxd/">
+              <i class="fab fa-instagram"></i>
+            </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      © 2022 Joshua Chen
+      <a class="grey-text text-lighten-4 right" href="https://sites.google.com/view/arcs-lab">ARCS Lab</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.sidenav').sidenav();
+      $('.parallax').parallax();
+      $('.materialboxed').materialbox();
+      $('.scrollspy').scrollSpy();
+    });
+  </script>
+</body>
+</html>
