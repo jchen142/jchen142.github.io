@@ -76,7 +76,7 @@
         <h5 class="white-text">University of California, Riverside</h5>
         <p class="white-text">M.S in Electrical Engineering | 2020-2022</p>
         <p class="white-text">Cumulative GPA: 3.70</p>
-        <p class="white-text">Thesis: Automated Smart Pressure Chamber for Agriculture</p>
+        <p class="white-text">Thesis: Vision Based Model for Xylem Water Detection</p>
       </div>
     </div>
     <div class="row container">
@@ -168,44 +168,34 @@
 
   <!-- Parallax -->
   <div class="parallax-container">
-    <div class="parallax"><img src="img/husky1.jpg"></div>
+    <div class="parallax"><img src="img/hqpicamcase.jpg"></div>
   </div>
 
   <!-- Research -->
   <div class="section black">
     <div class="row container">
       <h2 class="header white-text center-align scrollspy" id="Research">Research</h2>
-      <p class="white-text center-align">As a general overview, my research at 
+      <p class="white-text center-align">My research at 
         UCR's ARCS (Autonomous Robots and Control Systems) Lab 
         involves the designing of an autonomous smart pressure chamber 
-        system to be mounted on a robot for field testing of leaf water 
-        potential of crops. This method of measuring leaf water potential 
-        is one of the least invasive and most practical in terms of both 
-        finance and the technology readily available. A manipulator selects 
-        and cuts a leaf from the crop of interest, and the leaf is inserted 
-        into the pressure chamber for water potential measurement. 
-        The measurement is taken automatically by a pressure sensor once the 
-        computer vision system detects a sap drop at the tip of the xylem.</p>
-      <p class="white-text center-align">Delving into greater detail, the focus of my research within the 
-        Agrobotics team has primarily been to develop a computer vision control 
-        system to take leaf water potential measurements from various crops using
-        the Scholander pressure chamber. This research aims to automate the dangerous
-        task of taking the LWP measurements manually, to increase the efficiency of
-        the task, and to provide a scalable method to take LWP measurements over a wide
-        variety of crops. LWP measurements are significant in agriculture becuase they
-        determine the irrigation schedule of the crops. My line of work also involves
-        the collection of a novel image dataset of wet and dry xylems from a couple different 
-        species of plants. My group intends to publish this dataset publicly and we are 
-        currently working on the CASE 2022 conference paper as of early March 2022 for this.
+        system to be mounted on a robot for in-situ field testing of stem water 
+        potential of crops. The pressure chamber method of measuring stem water potential 
+        is one of the most widely employed and proven methods in the industry, but it comes with its grievances: Lack of scalability and potentially dangerous to operate. At ARCS, one of our goals is to automate the SWP measurement process to increase the safety, precision, and efficiency over the current method.</p>
+      <p class="white-text center-align">The focus of my research within the 
+        Agrobotics team has been to develop a computer vision model to take stem water potential measurements from avocado crops using
+        the Scholander pressure chamber. These measurements are significant in agriculture becuase they
+        are used as a proxy for orchard health and determine the optimal irrigation schedules for orchards. While building my vision model, I have also compiled a novel image dataset of wet and dry xylems from avocado crops. My group intends to publish this dataset publicly and we are 
+        currently working on the WACV 2023 conference paper as of June 2022.
       </p>
+      <p class="white-text center-align">The current results yielded by my vision model prove the potential and validity of our work, with the YOLOv5 CNN-based object detector we trained scoring high testing accuracy and a mAP score of 99.5%. The robust model was also able to discern between dry and wet xylem states between two different camera configurations, each with several different water expression cases.</p>
       <style>
             .imgFit {
               width: 100%;
               height: auto;
             }
       </style>
-      <div class="col s4"><img src="img/endocamsetup.jpg" class="imgFit materialboxed"></div>
-      <div class="col s4"><img src="img/hosesetup.jpg" class="imgFit materialboxed"></div>
+      <div class="col s4"><img src="img/EndocamOutside.jpg" class="imgFit materialboxed"></div>
+      <div class="col s4"><img src="img/hqconfig.jpg" class="imgFit materialboxed"></div>
       <div class="col s4"><img src="img/sapdrop.jpg" class="imgFit materialboxed"></div>
     </div>
     <div class="row container">
@@ -213,13 +203,13 @@
       <div class="slider">
         <ul class="slides">
             <li>
-              <img src="img/Air_Schematic.jpg"> 
+              <img src="img/WetXylemComp.jpg"> 
             </li>
             <li>
               <img src="img/husky1.jpg"> 
             </li>
             <li>
-              <img src="img/CV_Schematic_PumpUp.jpg">
+              <img src="img/ambicase.jpg">
             </li>
         </ul>
       </div>
