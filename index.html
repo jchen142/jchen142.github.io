@@ -137,7 +137,7 @@
 
       <div class="col s6 m3">
             <div class="card-panel">
-              <img src="img/raspberry.png" class="responsive-img materialboxed">
+              <img src="img/raspberrypi.png" class="responsive-img materialboxed">
               <br>
               <h5 class="header flow-text center-align">Raspberry Pi</h5>
             </div>
@@ -158,18 +158,18 @@
           </div>
       <div class="col s6 m3">
             <div class="card-panel">
-              <img src="img/jupyter.png" class="responsive-img materialboxed">
+              <img src="img/cLogo.jpg" class="responsive-img materialboxed">
               <br>
-              <h5 class="header flow-text center-align">Jupyter</h5>
+              <h5 class="header flow-text center-align">C++</h5>
             </div>
           </div>
     </div>
   </div>
 
   <!-- Parallax -->
-  <div class="parallax-container">
+  <!--<div class="parallax-container">
     <div class="parallax"><img src="img/hqpicamcase.jpg"></div>
-  </div>
+  </div>-->
 
   <!-- Research -->
   <div class="section black">
@@ -184,10 +184,9 @@
       <p class="white-text center-align">The focus of my research within the 
         Agrobotics team has been to develop a computer vision model to take stem water potential measurements from avocado crops using
         the Scholander pressure chamber. These measurements are significant in agriculture becuase they
-        are used as a proxy for orchard health and determine the optimal irrigation schedules for orchards. While building my vision model, I have also compiled a novel image dataset of wet and dry xylems from avocado crops. My group intends to publish this dataset publicly and we are 
-        currently working on the WACV 2023 conference paper as of June 2022.
+        are used as a proxy for orchard health and determine the optimal irrigation schedules for orchards. While building my vision model, I have also compiled a novel image dataset of wet and dry xylems from avocado and orange crops. My group intends to publish this dataset publicly and we have recently submitted a paper to the WACV 2023 conference.
       </p>
-      <p class="white-text center-align">The current results yielded by my vision model prove the potential and validity of our work, with the YOLOv5 CNN-based object detector we trained scoring high testing accuracy and a mAP score of 99.5%. The robust model was also able to discern between dry and wet xylem states between two different camera configurations, each with several different water expression cases.</p>
+      <p class="white-text center-align">The current results yielded by my vision model prove the potential and validity of our work, with the YOLOv5 CNN-based object detector we trained scoring high testing accuracy and a mAP score of 99.5%. The robust model was also able to discern between dry and wet xylem states between two different camera configurations, each with several different water expression cases. Most recently, we have trained and tested the newly released YOLOv6 and YOLOv7 networks. Both of these saw an improvement in overall accuracy and confidence, and they both can generalize well on the xylem dataset.</p>
       <style>
             .imgFit {
               width: 100%;
@@ -196,20 +195,20 @@
       </style>
       <div class="col s4"><img src="img/EndocamOutside.jpg" class="imgFit materialboxed"></div>
       <div class="col s4"><img src="img/hqconfig.jpg" class="imgFit materialboxed"></div>
-      <div class="col s4"><img src="img/sapdrop.jpg" class="imgFit materialboxed"></div>
+      <div class="col s4"><img src="img/chambersetup.jpg" class="imgFit materialboxed"></div>
     </div>
     <div class="row container">
       
       <div class="slider">
         <ul class="slides">
             <li>
+              <img src="img/V6_dry_wet.jpg"> 
+            </li>
+            <li>
               <img src="img/WetXylemComp.jpg"> 
             </li>
             <li>
-              <img src="img/husky1.jpg"> 
-            </li>
-            <li>
-              <img src="img/ambicase.jpg">
+              <img src="img/hqpicamcase.jpg">
             </li>
         </ul>
       </div>
@@ -219,6 +218,12 @@
       <div class="col s4"><img src="img/chambertrans.jpg" class="imgFit"></div>
       -->
     </div>
+  </div>
+
+  <div class="video-container">
+    <iframe width="auto" height="480" src="videos/wetnessDetection.mp4" 
+      frameborder="0" allowfullscreen>
+    </iframe>
   </div>
 
   <!-- Parallax -->
