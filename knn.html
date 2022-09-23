@@ -1,0 +1,138 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <title>Joshua Chen</title>
+  <style>
+    .section{
+      padding-top: 2vw;
+      padding-bottom: 2vw;
+    }
+    .tabs .indicator{
+      background-color: #1a237e;
+    }
+    .tabs .tab a:focus, .tabs .tab a:focus.active{
+      background: transparent;
+    }
+  </style>
+</head>
+<body>
+    <!-- Navbar -->
+  <header>
+    <nav class="nav-wrapper black">
+      <div class="container">
+        
+        <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+          <i class="material-icons">menu</i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#Research">Research</a></li>
+          <li><a href="index.html#Projects">Projects</a></li>
+        </ul>
+        <ul class="sidenav grey lighten-2" id="mobile-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#Research">Research</a></li>
+          <li><a href="index.html#Projects">Projects</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Content -->
+  <div class="section white">
+    <div class="row container">
+        <h2 style="font-family: georgia;" class="header center-align">
+          KNN Digit Classifier</h2>
+    </div>
+  </div>
+
+  <div class="row">
+    <style>
+        .centerImg {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 20%;
+            height: 20%;
+        }
+    </style>
+    <style>
+        .smallImg {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            height: 50%;
+        }
+    </style>
+    <div class="col s12">
+        <img src="img/digitResult.jpg" class="responsive-img centerImg">
+    </div>
+    <div class="col s12">
+        <img src="img/knnAlg.jpg" class="responsive-img smallImg">
+    </div>
+  </div>
+
+  <div class="section white">
+    <div class="row container">
+        <h4>About the project:</h4>
+        <p class="grey-text text-darken-3 lighten-3">The KNN digit classifier project involves classifying a subset of the MNIST handwritten digit dataset (1,2,3) with a ground-up implementation of the KNN algorithm in Python. For a proximity measurement, the Euclidean distance was used.</p>
+        <p class="grey-text text-darken-3 lighten-3">The final performance of my KNN classifier attained a 96% classification accuracy with k=3 neighbors and 97% with k=1 neighbor. In the figure above, it is evident that the poorly written digits had a propensity for being incorrectly classified while the better written digits were classified correctly.</p>
+        <br>
+        <h4>Skills:</h4>
+        <p>Software: Python</p>
+        <p>Conceptual: K Nearest Neighbors | Supervised learning</p>
+    </div>
+  </div>
+  
+    <!-- Footer -->
+  <footer class="page-footer black">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Contact</h5>
+          <p class="grey-text text-lighten-4">Email: jchen142@ucr.edu</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Social Media</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/jchen142/">
+              <i class="fab fa-linkedin"></i>
+            </a></li>
+            <li><a class="grey-text text-lighten-3" href="https://www.instagram.com/itzjoshhhxd/">
+              <i class="fab fa-instagram"></i>
+            </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      © 2022 Joshua Chen
+      <a class="grey-text text-lighten-4 right" href="https://sites.google.com/view/arcs-lab">ARCS Lab</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.sidenav').sidenav();
+      $('.parallax').parallax();
+      $('.materialboxed').materialbox();
+      $('.scrollspy').scrollSpy();
+      $('.slider').slider();
+    });
+  </script>
+</body>
+</html>

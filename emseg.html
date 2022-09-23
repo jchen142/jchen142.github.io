@@ -1,0 +1,148 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <title>Joshua Chen</title>
+  <style>
+    .section{
+      padding-top: 2vw;
+      padding-bottom: 2vw;
+    }
+    .tabs .indicator{
+      background-color: #1a237e;
+    }
+    .tabs .tab a:focus, .tabs .tab a:focus.active{
+      background: transparent;
+    }
+  </style>
+</head>
+<body>
+    <!-- Navbar -->
+  <header>
+    <nav class="nav-wrapper black">
+      <div class="container">
+        
+        <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+          <i class="material-icons">menu</i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#Research">Research</a></li>
+          <li><a href="index.html#Projects">Projects</a></li>
+        </ul>
+        <ul class="sidenav grey lighten-2" id="mobile-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#Research">Research</a></li>
+          <li><a href="index.html#Projects">Projects</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Content -->
+  <div class="section white">
+    <div class="row container">
+        <h2 style="font-family: georgia;" class="header center-align">
+          Expectation Maximization Algorithm</h2>
+    </div>
+  </div>
+
+  <div class="row">
+    <style>
+        .centerImg {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 75%;
+            height: 75%;
+        }
+    </style>
+    <style>
+        .smallImg {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 35%;
+            height: 35%;
+        }
+    </style>
+    <div class="col s12">
+        <img src="img/emSeg.jpg" class="responsive-img centerImg">
+    </div>
+  </div>
+
+  <div class="section white">
+    <div class="row container">
+        <h4>Color image segmentation with EM:</h4>
+        <p class="grey-text text-darken-3 lighten-3">Above, the right image is the original input image to be segmented. The left image is the result of running my implementation of the expectation maximization algorithm to segment the image using k=2 clusters. The algorithm involves initializing some parameters and two randomly placed Gaussians. After initialization, the mixture of Gaussians weight calculations were performed along with pixel class assignment during the E-step. In the following M-step, Gaussians are adjusted according to parameter estimators. The E-step and M-step are iterated over until the error converges to a predetermined threshold.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col s12">
+      <img src="img/emCode.jpg" class="responsive-img centerImg">
+    </div>
+    <div class="col s12">
+        <img src="img/emHeight.jpg" class="responsive-img smallImg">
+    </div>
+  </div>
+  <div class="section white">
+    <div class="row container">
+        <h4>Determining gender of height data with EM:</h4>
+        <p class="grey-text text-darken-3 lighten-3">Two randomly placed Gaussians and parameters were initialized before feeding the height data to the EM algorithm. Once initialization was completed, weights were calculated and the average log-likelihood function of the data was determined during the E-step. Next in the M-step, parameter estimates that maximize the log-likelihood function are calculated and the Gaussians are adjusted. The E-step and M-step are iterated over until the error converges to the desired precision.</p>
+        <br>
+        <h4>Skills:</h4>
+        <p>Software: Matlab</p>
+        <p>Conceptual: Expectation Maximization Algorithm | Unsupervised learning | Color-based image segmentation</p>
+    </div>
+  </div>
+  
+    <!-- Footer -->
+  <footer class="page-footer black">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Contact</h5>
+          <p class="grey-text text-lighten-4">Email: jchen142@ucr.edu</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Social Media</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/jchen142/">
+              <i class="fab fa-linkedin"></i>
+            </a></li>
+            <li><a class="grey-text text-lighten-3" href="https://www.instagram.com/itzjoshhhxd/">
+              <i class="fab fa-instagram"></i>
+            </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      © 2022 Joshua Chen
+      <a class="grey-text text-lighten-4 right" href="https://sites.google.com/view/arcs-lab">ARCS Lab</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.sidenav').sidenav();
+      $('.parallax').parallax();
+      $('.materialboxed').materialbox();
+      $('.scrollspy').scrollSpy();
+      $('.slider').slider();
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <title>Joshua Chen</title>
+  <style>
+    .section{
+      padding-top: 2vw;
+      padding-bottom: 2vw;
+    }
+    .tabs .indicator{
+      background-color: #1a237e;
+    }
+    .tabs .tab a:focus, .tabs .tab a:focus.active{
+      background: transparent;
+    }
+  </style>
+</head>
+<body>
+    <!-- Navbar -->
+  <header>
+    <nav class="nav-wrapper black">
+      <div class="container">
+        
+        <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+          <i class="material-icons">menu</i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#Research">Research</a></li>
+          <li><a href="index.html#Projects">Projects</a></li>
+        </ul>
+        <ul class="sidenav grey lighten-2" id="mobile-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#Research">Research</a></li>
+          <li><a href="index.html#Projects">Projects</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Content -->
+  <div class="section white">
+    <div class="row container">
+        <h2 style="font-family: georgia;" class="header center-align">
+          Robotic Motion Planning with Turtlebot</h2>
+    </div>
+  </div>
+
+  <div class="row">
+    <style>
+        .centerImg {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            height: 50%;
+        }
+    </style>
+    <div class="col s12">
+        <img src="img/Path.jpg" class="responsive-img centerImg">
+    </div>
+  </div>
+
+  <div class="section white">
+    <div class="row container">
+        <h4>About the project:</h4>
+        <p class="grey-text text-darken-3 lighten-3">The focus of this project is to combine trajectory planning with the A* search algorithm in order to create a cohesive system that can move the turtlebot from start to goal while avoiding obstacles. The A* algorithm generates the most optimal path from start to finish. The generated path must avoid obstacles on the grid map shown above.</p>
+        <p class="grey-text text-darken-3 lighten-3">The grid map above is a visualization of the A* algorithm pathfinding. Here the algorithm searches for successive neighboring nodes to each current node. We are using the 4-connect method, so for each “current” node, the algorithm will search for four nodes directly adjacent to it. The algorithm will then determine if each of those neighboring nodes is open, and for the ones that are open, the algorithm will then use heuristics to determine which open node is closest to the goal. That node is then the new current node for the next loop iteration in the algorithm.</p>
+        <p class="grey-text text-darken-3 lighten-3">Using the generated path from the A* algorithm, I then generated a smooth, infinitely differentiable trajectory for the turtlebot to follow around the path. This trajectory was generated through a 3rd order polynomial.</p>
+        <p class="grey-text text-darken-3 lighten-3">The turtlebot script provided below fulfilled the project objective gracefully. Shown above is the generated path the turtlebot followed from the green start area to the buffer and goal zones (orange and red respectively). Note that the execution of this project was not done in Gazebo, but at one of the university's robotics labs with real Turtlebots.</p>
+        <p><a class="waves-effect waves-light black btn" href="files/turtlebot.py">turtlebot.py</a></p>
+        <br>
+        <h4>Skills:</h4>
+        <p>Software: Python | Linux</p>
+        <p>Conceptual: Motion Planning | A* Algorithm | Polynomial Time Scaling</p>
+    </div>
+  </div>
+  
+  <!-- Footer -->
+  <footer class="page-footer black">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Contact</h5>
+          <p class="grey-text text-lighten-4">Email: jchen142@ucr.edu</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Social Media</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/jchen142/">
+              <i class="fab fa-linkedin"></i>
+            </a></li>
+            <li><a class="grey-text text-lighten-3" href="https://www.instagram.com/itzjoshhhxd/">
+              <i class="fab fa-instagram"></i>
+            </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      © 2022 Joshua Chen
+      <a class="grey-text text-lighten-4 right" href="https://sites.google.com/view/arcs-lab">ARCS Lab</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.sidenav').sidenav();
+      $('.parallax').parallax();
+      $('.materialboxed').materialbox();
+      $('.scrollspy').scrollSpy();
+      $('.slider').slider();
+    });
+  </script>
+</body>
+</html>
